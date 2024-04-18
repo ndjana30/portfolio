@@ -220,6 +220,12 @@ body{
 .contact{
     animation: dance-up 2s infinite ;
 }
+.hero{
+    animation: dance-up 2s infinite ;
+   }
+   .about{
+    animation: dance-up 2s infinite ;
+   }
 .about .photo{
     animation: dance 2s infinite ;
 }
