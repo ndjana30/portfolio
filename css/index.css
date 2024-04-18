@@ -1,0 +1,256 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(to right, white,black);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.hero{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: #1D1D1D; */
+    /* background: linear-gradient(to right, white,black); */
+    background: url("../images/portfolio-background.jpg");
+    /* filter: blur(0.5px); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 99vh;
+    gap: 10px;
+}
+.name{
+    width: 100%;
+    /* border: 1px solid red; */
+    text-transform: uppercase;
+    text-wrap:pretty;
+    color: #EAEAEA;
+    font-size: 50px;
+    font-weight: bold;
+}
+.socials{
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 10%;
+    gap: 10px;
+}
+.social1{
+    background-image: url("../images/5282542_linkedin_network_social\ network_linkedin\ logo_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border: 1px solid white; */
+    width:10%;
+    height: 50%;
+}
+
+.social2{
+    background-image: url("../images/5282544_camera_instagram_social\ media_social\ network_instagram\ logo_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border: 1px solid white; */
+    width:10%;
+    height: 50%;
+}
+.social3{
+    background-image: url("../images/5279111_network_fb_social\ media_facebook_facebook\ logo_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border: 1px solid white; */
+    width:10%;
+    height: 50%;
+}
+.social4{
+    background-image: url("../images/5282549_call_chat_mobile_whatsapp_whatsapp\ logo_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border: 1px solid white; */
+    width:10%;
+    height: 50%;
+}
+
+.contact{
+    /* border: 1px solid red; */
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.contact a{
+    text-decoration: none;
+    color: #EAEAEA;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    text-wrap:stable;
+}
+.contact a:hover{
+    border: 1px solid linear-gradient(to right,white,black);
+    background-color: grey;
+}
+
+.about{
+    height: 100%;
+    /* filter: blur(0.5px); */
+
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+
+}
+.photo{
+    width:20%;
+    height: 25vh;
+    border-radius: 15px;
+    /* height: 30px; */
+    /* border: 1px solid orange; */
+    background: url("../images/me.jpg");
+    background-size: cover;
+}
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid white; */
+    width: 40%;
+}
+.about-text .header
+{
+    color: #EAEAEA;
+    font-size: 25px;
+    text-transform: uppercase;
+    /* border: 1px solid grey; */
+}
+.about-text .text{
+    color: #EAEAEA;
+    font-size: 15px;
+    text-align: justify;
+    /* text-transform: uppercase; */
+    /* border: 1px solid grey; */
+}
+
+.projects{
+    /* border: 1px solid red; */
+    /* height: 100%; */
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:#EAEAEA;
+    gap: 100px;
+    padding: 20px 0 20px 0;
+    flex-wrap: wrap;
+    
+}
+.project{
+    /* border: 1px solid blue; */
+    width: 30%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20%;
+    /* border: 1px solid black;
+    border-radius: 15px; */
+}
+.project .project-name{
+    font-size: 30px;
+    /* width: 100%; */
+}
+.project .description{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align:center;
+    gap: 15px;
+    width: 100%;
+}
+.description .text{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+@keyframes slideInFromRight {
+    from {
+       transform: translateX(100%);
+    }
+    to {
+       transform: translateX(0);
+    }
+   }
+
+  
+
+   @keyframes dance {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+ }
+
+ @keyframes dance-up{
+    0% { transform: translateY(0); }
+    25% { transform: translateY(10px); }
+    50% { transform: translateY(-10px); }
+    75% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+ }
+ .name{
+    animation: dance 2s infinite ;
+   }
+.socials{
+    animation: dance 2s infinite ;
+   }
+.contact{
+    animation: dance-up 2s infinite ;
+}
+.about .photo{
+    animation: dance 2s infinite ;
+}
+
+.link{
+    animation: dance 2s infinite;
+}
+   
+@media screen and (max-width : 727px){
+    .about{
+        height: 100%;
+        /* border: 1px solid blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+    }
+    .photo{
+        width:30%;
+        height: 30vh;
+        border-radius: 15px;
+        /* height: 30px; */
+        /* border: 1px solid orange; */
+        background: url("../images/me.jpg");
+        background-size: cover;
+    }
+}
+@media screen and (max-width : 1184px)
+{
+    .projects{
+        flex-direction: column;
+    }
+}
