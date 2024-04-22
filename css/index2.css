@@ -91,9 +91,9 @@ body{
 }
 
 .who{
-    height: 70vh;
-    width: 100%;
-    /* border: 1px solid #dee4e8; */
+    height: 90vh;
+    width: 99vw;
+    /* border: 1px solid black; */
     z-index: 10; 
     display: flex;
     flex-direction: row;
@@ -106,7 +106,7 @@ body{
     margin-top: 75vh;
     background-color: #dee4e8;
 }
-.picture,.presentation{
+.presentation{
     /* border: 1px solid orange; */
 }
 .picture{
