@@ -5,7 +5,7 @@ body{
     align-items: center;
     text-align: center;
     background-color: #dee4e8;
-    gap: 20px;
+    gap: 0px;
 }
 
 .navbar{
@@ -157,12 +157,60 @@ body{
 .description{
     line-height: 25px;
     font-size: 20px;
+    text-align: left;
 }
 .span-color{
     color: #3f51b5;
 }
-span{
-    width: 100%;
+.where{
+    /* border: 1px solid red; */
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    height: 100%;
+    z-index: 10; 
+    background-color: #dee4e8;
+}
+ol{
+    
+    text-align:left;
+    line-height: 29px;
+    font-size: 15px;
+    
+}
+li{
+    text-align:left;
+    line-height: 29px;
+    font-size: 15px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid #FAFAFA;
+    width: 60%;
+    gap: 17px;
+    background-color: #FAFAFA;
+    padding: 55px 30px 55px 30px;
+    border-radius: 5px;
+}
+.gen-where{
+    font-size: 25px;
+    font-weight: bold;
+}
+.enterprice{
+    color: #3f51b5;
+    font-size: 20px;
+    font-weight: bold;
+}
+.post{
+    font-size: 15px;
+    color: grey;
 }
 
 @media screen and (max-width : 727px){
@@ -173,5 +221,8 @@ span{
         width: 100%;
     }.picture .photo{
       background-position: center;
+    }
+    .description{
+        text-align: center;
     }
 }
